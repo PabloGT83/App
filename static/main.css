@@ -1,0 +1,26 @@
+body {
+  background-color:#1DA1F2;
+  align-content: center;
+}
+.menu {
+  background-color: #FFFFFF;
+  align-content: center;
+}
+a.menu {
+  background-color: #E1E8ED;
+  align-content: center;
+}
+img {
+  width:100%;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+div {
+  padding: 2%;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}  
+
+<div class="image-header">
+   <img src="/static/Opinasdeque.png">
+</div>
+  <div class="intro" style="text-align:center">
+    <h2>Welcome to the world of revelation.</h2>
+  </div>
+  <form action="/" method="POST">
+    {{ template_form.hidden_tag() }}
+    <p>{{ template_form.user.label }}
+    {{ template_form.user() }}</p>
+    <p>{{ template_form.submit() }}</p>
+  </form>
+{% endblock %}
