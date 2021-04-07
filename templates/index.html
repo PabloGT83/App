@@ -1,16 +1,27 @@
 {% extends "base.html" %}
 {% block content %}  
 
-<div class="image-header">
-   <img src="/static/Opinasdeque.png">
-</div>
-  <div class="intro" style="text-align:center">
-    <h2>Welcome to the world of revelation.</h2>
+<div class='row'>
+  <div class='column'>
+    <div class='left-column'>
+      <h1 class="content-quote">" Opinas de que</h1>
+    </div>
   </div>
-  <form action="/" method="POST">
-    {{ template_form.hidden_tag() }}
-    <p>{{ template_form.user.label }}
-    {{ template_form.user() }}</p>
-    <p>{{ template_form.submit() }}</p>
-  </form>
+  <div class='column'>
+    <div class='right-column'>
+      <img src="/static/Opinasdeque.png">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class='column'>
+    <form action="/" method="POST">
+      {{ template_form.hidden_tag() }}
+      <p>{{ template_form.user.label }}
+      {{ template_form.user() }}</p>
+      <p>{{ template_form.submit() }}</p>
+    </form>
+  </div>  
+</div>
+ 
 {% endblock %}

@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Dela+Gothic+One&display=swap');
+
+
 body {
   background-color:#1DA1F2;
   align-content: center;
+  font-family: 'Dela Gothic One';
 }
-.menu {
-  background-color: #FFFFFF;
-  align-content: center;
-}
-a.menu {
-  background-color: #E1E8ED;
-  align-content: center;
-}
+
+
+
 img {
   width:100%;
 }
@@ -23,4 +22,145 @@ h2 {
 }
 div {
   padding: 2%;
+}
+
+
+.basic-navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  
+}
+
+.menu-item {
+  padding: 5px;
+  font-size: x-large;
+  text-decoration: none;
+  color: #1DA1F2;
+  
+}
+.menu-item:visited { color:#1DA1F2; }
+.menu-item:visited:hover { color: #1DA1F2; }
+.menu-item:hover { color: green; }
+.menu-item:active { color: #1DA1F2; }
+
+.basic-navigation-container{
+
+  background-color: white;
+  color: black;
+  width: 90%;
+  height: 64px;
+  border-radius: 10px;
+  position: fixed;
+
+
+}
+
+.out-wrapper {
+  margin-top: 64px !important;
+}
+
+
+.page-content {
+  margin: 65px 15px 15px 15px;
+  background-color: white; 
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left-column {
+}
+
+.right-column {
+
+}
+.right-column img{
+    transform: rotateX(20deg) rotateY(-18deg) rotateZ(3deg);
+    border-radius: 0.25em;
+    box-shadow: 2px 10px 30px hsla(0, 0%, 0%, 0.25);
+    transition: 3s;
+  }
+  .right-column:hover img {
+    transform: rotate(0);
+  }
+
+
+.content-quote{
+  font-size: 150px;
+  text-align: left;
+  color: #1DA1F2;
+}
+
+input[type=submit]{
+  background-color: #1DA1F2;
+  color: white;
+  border-radius: 10px;
+  font-size: 100px;
+  font-family: 'Dela Gothic One';
+  border: 0px;
+  cursor:pointer;
+}
+
+form p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+
+
+}
+
+input[name=user] {
+  width: 100%;
+  font-size: 50px;  font-family: 'Dela Gothic One';
+  border-radius: 10px;
+}
+
+
+footer {
+	background: rgb(47, 51, 54);
+    text-align: center;
+    font-family: 'Dela Gothic One';
+    border-radius: 10px;
+  }
+.footerLinks {
+   text-align: center;
+}
+.footerLinks ul {
+	padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.footerLinks li {
+	display: inline;
+}
+.footerLinks a {
+	color: #d9d9d9;
+	text-decoration: none;
+	font-size: 13px;
+}
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+	margin: 0;
+	color: #b3b3b3;
+	font-size: 11px;
 }

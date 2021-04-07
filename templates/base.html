@@ -4,14 +4,31 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="basic-navigation">
+      <div class="basic-navigation-container">
+        <a class="menu-item" href="/">Home</a>
+        <a class="menu-item" href="/about">About</a>
+      </div>
+    </nav>
+
 <div class="out-wrapper">
-  <div class="menu" >
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-  </div>
-  <div class="content" >
+  <div class="page-content" >
     {% block content %}
     {% endblock %}
   </div>
+  <footer>
+    <div class="footerLinks">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2021</p>
+      </div>
+  </footer>
 </body>
 </html>
